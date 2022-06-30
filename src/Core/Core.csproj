@@ -14,6 +14,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Runtime/CompilerServices/ITuple.cs" Condition="'$(TargetFramework)'!='netcoreapp2.0'" />
+    <Compile Include="./Runtime/CompilerServices/ITuple.cs" Condition="'$(TargetFramework)'!='netcoreapp2.0'" />
+    <Compile Include="./SerializableAttribute.cs" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^netstandard1\.[0-6]$'))" />
+    <Compile Include="./Collections/IStructuralComparable.cs" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^net(?:20|35)$'))" />
+    <Compile Include="./Collections/IStructuralEquatable.cs" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^net(?:20|35)$'))" />
   </ItemGroup>
 </Project>

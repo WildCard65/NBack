@@ -7,6 +7,5 @@ public interface ITuple
     int Length { get; }
 
     /// <summary>Gets the element at position <paramref name="index" />.</summary>
-    /// <param name="index">The zero-based index in this data structure.</param>
     object? this[int index] { get; }
 }
