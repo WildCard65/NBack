@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <NoWarn>1701;1702;CA1036;CA2201;CA2231</NoWarn>
+    <NoWarn>1701;1702;CA1036;CA1051;CA2201;CA2231</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

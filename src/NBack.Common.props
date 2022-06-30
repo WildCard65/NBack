@@ -19,6 +19,7 @@
     <Nullable>enable</Nullable>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>$(SourceDirectory)\NBack.snk</AssemblyOriginatorKeyFile>
+    <WarningLevel>6</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>

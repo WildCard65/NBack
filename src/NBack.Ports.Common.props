@@ -16,7 +16,6 @@
     <PackageTags>backports;net</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <AnalysisLevel>6.0-recommended</AnalysisLevel>
-    <WarningLevel>6</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
