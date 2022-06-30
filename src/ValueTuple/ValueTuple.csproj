@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net20;net35</TargetFrameworks>
+  </PropertyGroup>
+
+  <Import Project="$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)', '..', 'NBack.Ports.Common.props'))" />
+
+  <PropertyGroup>
+    <Description>Provides a backport of `System.ValueTuple` for use in older .NET platforms.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(SourceDirectory)\Core\Core.csproj" />
+  </ItemGroup>
+</Project>

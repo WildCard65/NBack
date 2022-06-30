@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current">
+  <PropertyGroup Label="Common.Paths">
+    <RootDirectory>$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)', '..'))</RootDirectory>
+    <SourceDirectory>$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)'))</SourceDirectory>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Common.Properties">
+    <Product>NBack.$(MSBuildProjectName)</Product>
+    <Authors>WildCard65,dotnetfoundation</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Common.Build.Properties">
+    <AssemblyName>$(Product)</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Nullable>enable</Nullable>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(SourceDirectory)\NBack.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="System" />
+  </ItemGroup>
+</Project>
